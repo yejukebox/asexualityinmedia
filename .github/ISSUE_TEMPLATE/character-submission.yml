@@ -1,0 +1,131 @@
+name: Character Submission
+description: Submit a new asexual character to be added to the database
+title: "[Character]: "
+labels: ["character-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit an Asexual Character
+
+        Thank you for contributing to our database! Please fill out the information below to submit a character for review.
+
+  - type: input
+    id: full-name
+    attributes:
+      label: Character Full Name
+      description: The character's complete name
+      placeholder: "e.g., Todd Chavez"
+    validations:
+      required: true
+
+  - type: input
+    id: nickname
+    attributes:
+      label: Nickname
+      description: Any commonly used nickname or alias (optional)
+      placeholder: "e.g., Todd"
+    validations:
+      required: false
+
+  - type: input
+    id: title
+    attributes:
+      label: Show/Film Title
+      description: The name of the television show or film
+      placeholder: "e.g., BoJack Horseman"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: genre
+    attributes:
+      label: Genre
+      description: Primary genre of the media
+      options:
+        - Animation
+        - Drama
+        - Comedy
+        - Fantasy
+        - Science Fiction
+        - Action
+        - Thriller
+        - Horror
+        - Romance
+        - Documentary
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Release Year
+      description: Year the show first aired or the film was released
+      placeholder: "e.g., 2014"
+    validations:
+      required: true
+
+  - type: input
+    id: rating
+    attributes:
+      label: Content Rating
+      description: US content rating (TV-MA, TV-14, TV-PG, PG-13, R, etc.)
+      placeholder: "e.g., TV-MA"
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Primary language of the media
+      placeholder: "e.g., English, Japanese, Korean, Spanish"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Representation Type
+      description: Is the asexual representation explicit or implicit?
+      options:
+        - Explicit (character identifies as asexual)
+        - Implicit (portrayal suggests asexuality)
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence/Justification
+      description: |
+        Please provide evidence for including this character:
+        - For explicit: Episode references, quotes, creator statements
+        - For implicit: Character behavior patterns, relationship context, analysis
+      placeholder: |
+        e.g., In Season 4, Episode 3, Todd explicitly comes out as asexual. The show continues to explore his identity throughout the remaining seasons.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context (Optional)
+      description: Any other relevant information about the character or their representation
+      placeholder: "e.g., Links to articles, interviews, or episode guides"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Guidelines
+      description: Please confirm you have read and agree to our guidelines
+      options:
+        - label: I have provided accurate information to the best of my knowledge
+          required: true
+        - label: I understand this submission will be reviewed before being added to the database
+          required: true
+        - label: This character is from released media (not upcoming/unreleased content)
+          required: true

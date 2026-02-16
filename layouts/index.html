@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{ .Site.Title }}</h1>
+            <p class="tagline">{{ .Site.Params.description }}</p>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/submit/">Submit Character</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <h2>Explore Characters</h2>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="genre-filter">Genre:</label>
+                    <select id="genre-filter">
+                        <option value="all">All Genres</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="language-filter">Language:</label>
+                    <select id="language-filter">
+                        <option value="all">All Languages</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="type-filter">Representation:</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="explicit">Explicit</option>
+                        <option value="implicit">Implicit</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" placeholder="Character or show name...">
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <div id="chart"></div>
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-color explicit"></span>
+                    <span>Explicit Representation</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color implicit"></span>
+                    <span>Implicit Representation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="character-count">
+            <p>Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> characters</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Asexuality in Media. View source on <a href="https://github.com/yejukebox/asexualityinmedia" target="_blank">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <script src="{{ "js/visualization.js" | relURL }}"></script>
+</body>
+</html>

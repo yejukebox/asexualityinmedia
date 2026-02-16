@@ -1,0 +1,76 @@
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+
+{{ define "description" }}{{ .Params.description }}{{ end }}
+
+{{ define "head" }}
+<script src="https://giscus.app/client.js"
+        data-repo="yejukebox/asexualityinmedia"
+        data-repo-id=""
+        data-category="Characters"
+        data-category-id=""
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}
+
+{{ define "main" }}
+<article class="character-detail">
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Params.nickname }}
+    <p class="nickname">Also known as: <em>{{ .Params.nickname }}</em></p>
+    {{ end }}
+
+    <div class="meta">
+        <div class="meta-item">
+            <strong>Show/Film:</strong>
+            <span>{{ .Params.charTitle }}</span>
+        </div>
+        <div class="meta-item">
+            <strong>Genre:</strong>
+            <span>{{ .Params.genre }}</span>
+        </div>
+        <div class="meta-item">
+            <strong>Year:</strong>
+            <span>{{ .Params.year }}</span>
+        </div>
+        <div class="meta-item">
+            <strong>Rating:</strong>
+            <span>{{ .Params.rating }}</span>
+        </div>
+        <div class="meta-item">
+            <strong>Language:</strong>
+            <span>{{ .Params.language }}</span>
+        </div>
+        <div class="meta-item">
+            <strong>Representation Type:</strong>
+            <span class="badge {{ .Params.type }}">{{ .Params.type }}</span>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>About</h2>
+        {{ if .Params.description }}
+        <p>{{ .Params.description }}</p>
+        {{ end }}
+        {{ .Content }}
+    </div>
+
+    <a href="{{ .Site.BaseURL }}" class="back-link">← Back to visualization</a>
+</article>
+
+<section class="character-detail">
+    <h2>Community Feedback</h2>
+    <p>Share your thoughts on this character's asexual representation. Use reactions to vote on representation quality, or leave a comment with your perspective.</p>
+
+    {{ partial "giscus.html" . }}
+</section>
+{{ end }}

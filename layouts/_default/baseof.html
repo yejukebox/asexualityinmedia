@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ block "description" . }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="{{ .Site.BaseURL }}" style="color: white; text-decoration: none;">{{ .Site.Title }}</a></h1>
+            <p class="tagline">{{ .Site.Params.description }}</p>
+            <nav>
+                <a href="{{ .Site.BaseURL }}">Home</a>
+                <a href="{{ .Site.BaseURL }}about/">About</a>
+                <a href="{{ .Site.BaseURL }}submit/">Submit Character</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Asexuality in Media. View source on <a href="https://github.com/yejukebox/asexualityinmedia" target="_blank">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html>

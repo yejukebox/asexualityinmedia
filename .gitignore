@@ -1,0 +1,30 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# IDE and editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Local development
+.hugo_build.lock

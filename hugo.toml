@@ -1,0 +1,27 @@
+baseURL = 'https://yejukebox.github.io/asexualityinmedia/'
+languageCode = 'en-us'
+title = 'Asexuality in Media'
+
+[params]
+  description = 'A comprehensive catalog of asexual characters in television and film'
+  author = 'yejukebox'
+
+[taxonomies]
+  genre = 'genres'
+  language = 'languages'
+  type = 'types'
+
+[outputs]
+  home = ['HTML', 'JSON']
+  page = ['HTML']
+
+[permalinks]
+  characters = '/characters/:slug/'
+
+[build]
+  writeStats = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
