@@ -14,9 +14,9 @@
             <h1>{{ .Site.Title }}</h1>
             <p class="tagline">{{ .Site.Params.description }}</p>
             <nav>
-                <a href="/">Home</a>
-                <a href="/about/">About</a>
-                <a href="/submit/">Submit Character</a>
+                <a href="{{ .Site.BaseURL }}">Home</a>
+                <a href="{{ "about" | relURL }}">About</a>
+                <a href="{{ "submit" | relURL }}">Submit Character</a>
             </nav>
         </div>
     </header>

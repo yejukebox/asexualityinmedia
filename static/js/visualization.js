@@ -22,7 +22,9 @@ const tooltip = d3.select("body")
     .style("opacity", 0);
 
 // Load data
-d3.json("/asexualityinmedia/data/characters.json").then(data => {
+// Use relative path that works with GitHub Pages baseURL
+const baseURL = window.location.pathname.includes('/asexualityinmedia') ? '/asexualityinmedia' : '';
+d3.json(`${baseURL}/data/characters.json`).then(data => {
     allCharacters = data;
     filteredCharacters = data;
 
@@ -186,7 +188,7 @@ function updateVisualization() {
                 .style("opacity", 0);
         })
         .on("click", function(event, d) {
-            window.location.href = `/asexualityinmedia/characters/${d.id}/`;
+            window.location.href = `${baseURL}/characters/${d.id}/`;
         });
 
     // Add animation

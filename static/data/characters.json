@@ -1,0 +1,98 @@
+[
+  {
+    "id": "todd-chavez",
+    "fullName": "Todd Chavez",
+    "nickname": "Todd",
+    "title": "BoJack Horseman",
+    "genre": "Animation",
+    "year": 2014,
+    "rating": "TV-MA",
+    "language": "English",
+    "type": "explicit",
+    "description": "Todd is a main character who explicitly comes out as asexual in season 4 and explores his asexuality throughout the series."
+  },
+  {
+    "id": "hara-tsumugi",
+    "fullName": "Hara Tsumugi",
+    "nickname": "Tsumugi",
+    "title": "Koisenu Futari",
+    "genre": "Drama",
+    "year": 2022,
+    "rating": "TV-14",
+    "language": "Japanese",
+    "type": "explicit",
+    "description": "Protagonist who identifies as aromantic asexual, navigating life and relationships while understanding her orientation."
+  },
+  {
+    "id": "liam-wilhelmina",
+    "fullName": "Liam Wilhelmina",
+    "nickname": "Liam",
+    "title": "Shadowhunters",
+    "genre": "Fantasy",
+    "year": 2016,
+    "rating": "TV-14",
+    "language": "English",
+    "type": "explicit",
+    "description": "A warlock who explicitly identifies as asexual and panromantic in the series."
+  },
+  {
+    "id": "elijah",
+    "fullName": "Elijah Mikaelson",
+    "nickname": "Elijah",
+    "title": "The Originals",
+    "genre": "Fantasy",
+    "year": 2013,
+    "rating": "TV-14",
+    "language": "English",
+    "type": "implicit",
+    "description": "An original vampire whose portrayal and character traits suggest asexual representation, though not explicitly stated."
+  },
+  {
+    "id": "esperanza-cruze",
+    "fullName": "Esperanza Cruze",
+    "nickname": "Esperanza",
+    "title": "The Imperfects",
+    "genre": "Science Fiction",
+    "year": 2022,
+    "rating": "TV-14",
+    "language": "English",
+    "type": "explicit",
+    "description": "A scientist who identifies as asexual, representing ace identity in a sci-fi setting."
+  },
+  {
+    "id": "lord-varys",
+    "fullName": "Lord Varys",
+    "nickname": "Varys",
+    "title": "Game of Thrones",
+    "genre": "Fantasy",
+    "year": 2011,
+    "rating": "TV-MA",
+    "language": "English",
+    "type": "implicit",
+    "description": "The Master of Whisperers who shows no sexual or romantic interest throughout the series, often interpreted as asexual representation."
+  },
+  {
+    "id": "greta-moreno",
+    "fullName": "Greta Moreno",
+    "nickname": "Greta",
+    "title": "Perfect Harmony",
+    "genre": "Comedy",
+    "year": 2019,
+    "rating": "TV-PG",
+    "language": "English",
+    "type": "explicit",
+    "description": "A choir member who identifies as asexual in the show."
+  },
+  {
+    "id": "alastor",
+    "fullName": "Alastor",
+    "nickname": "The Radio Demon",
+    "title": "Hazbin Hotel",
+    "genre": "Animation",
+    "year": 2024,
+    "rating": "TV-MA",
+    "language": "English",
+    "type": "explicit",
+    "description": "The Radio Demon, confirmed by creator to be asexual and aromantic, a powerful overlord in Hell."
+  }
+]
