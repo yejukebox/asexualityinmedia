@@ -2,14 +2,13 @@
 title: "Greta Moreno"
 date: 2026-02-16
 draft: false
-nickname: "Greta"
-charTitle: "Perfect Harmony"
+charTitle: "genera+ion"
 genre: "Comedy"
-year: 2019
-rating: "TV-PG"
+year: 2021
+rating: "TV-MA"
 language: "English"
-type: "explicit"
-description: "A choir member who identifies as asexual in the show."
+type: "implicit"
+description: "Not available for streaming online"
 ---
 
-A choir member who identifies as asexual in the show.
+Not available for streaming online

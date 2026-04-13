@@ -1,8 +1,9 @@
 ---
-title: "Liam Wilhelmina"
+title: "Riz Gukgak"
 date: 2026-02-16
 draft: false
-charTitle: "Dimension 20: A Crown of Candy"
+nickname: "The Ball"
+charTitle: "Dimension 20: Fantasy High"
 genre: "Adventure"
 year: 2000
 rating: "TV-MA"

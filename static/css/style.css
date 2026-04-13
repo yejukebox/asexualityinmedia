@@ -123,52 +123,75 @@ main {
 /* Visualization section */
 .visualization {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    overflow-x: auto;
 }
 
 #chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
+    width: 100%;
+    min-height: 420px;
 }
 
 #chart svg {
     display: block;
 }
 
-.legend {
+/* Chart legend */
+.chart-legend {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 1.2rem 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: #555;
 }
 
-.legend-item {
+.legend-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
-.legend-color {
-    width: 20px;
-    height: 20px;
+/* Dot shapes in legend */
+.legend-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    border: 2px solid white;
-    box-shadow: 0 0 0 1px var(--border-color);
 }
 
-.legend-color.explicit {
-    background-color: var(--ace-purple);
+.explicit-dot   { background: #7c3aed; opacity: 0.85; }
+.implicit-dot   { background: #9ca3af; opacity: 0.85; }
+.speculated-dot {
+    background: #9ca3af;
+    opacity: 0.4;
+    outline: 2px dashed #9ca3af;
+    outline-offset: 1px;
 }
 
-.legend-color.implicit {
-    background-color: var(--ace-gray);
+.legend-circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #7c3aed;
+    opacity: 0.75;
+}
+
+.legend-diamond {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: #7c3aed;
+    opacity: 0.75;
+    transform: rotate(45deg);
+    border-radius: 2px;
 }
 
 /* Character count */
@@ -184,21 +207,95 @@ main {
 
 /* Tooltip */
 .tooltip {
-    position: absolute;
+    position: fixed;
     text-align: left;
-    padding: 12px;
-    font-size: 14px;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    border-radius: 6px;
+    padding: 14px 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    background: #1a1a2e;
+    color: #e5e7eb;
+    border-radius: 8px;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 9999;
     max-width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    border: 1px solid rgba(124,58,237,0.3);
 }
 
-.tooltip strong {
-    color: var(--ace-purple);
+.tt-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #c4b5fd;
+    margin-bottom: 2px;
+}
+
+.tt-nick {
+    font-weight: 400;
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.tt-show {
+    color: #e5e7eb;
+    font-style: italic;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.tt-badges {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+
+.tt-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: rgba(255,255,255,0.1);
+    color: #d1d5db;
+}
+
+.tt-badge.tt-explicit { background: rgba(124,58,237,0.35); color: #c4b5fd; }
+.tt-badge.tt-implicit { background: rgba(156,163,175,0.25); color: #9ca3af; }
+.tt-badge.tt-media    { background: rgba(59,130,246,0.25); color: #93c5fd; }
+.tt-badge.tt-canon    { background: rgba(16,185,129,0.2); color: #6ee7b7; }
+
+.tt-meta {
+    color: #9ca3af;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.tt-genres {
+    color: #6b7280;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.tt-extra {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.tt-desc {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #6b7280;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 6px;
+    font-style: italic;
+}
+
+.tt-click {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #7c3aed;
+    font-weight: 600;
 }
 
 /* Chart styles */

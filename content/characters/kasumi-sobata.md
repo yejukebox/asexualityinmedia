@@ -1,10 +1,10 @@
 ---
-title: "Hara Tsumugi"
+title: "Kasumi Sobata"
 date: 2026-02-16
 draft: false
-charTitle: "17.3 About a Sex"
+charTitle: "I am What I am"
 genre: "Drama"
-year: 2020
+year: 2022
 rating: "None"
 language: "Japanese"
 type: "explicit"

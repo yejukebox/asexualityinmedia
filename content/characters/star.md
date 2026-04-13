@@ -1,12 +1,12 @@
 ---
-title: "Hara Tsumugi"
+title: "Star"
 date: 2026-02-16
 draft: false
-charTitle: "17.3 About a Sex"
+charTitle: "Queens of the Qing Dynasty"
 genre: "Drama"
-year: 2020
+year: 2022
 rating: "None"
-language: "Japanese"
+language: "English"
 type: "explicit"
 ---
 

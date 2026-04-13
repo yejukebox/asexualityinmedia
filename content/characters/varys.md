@@ -1,10 +1,10 @@
 ---
-title: "Alastor"
+title: "Varys"
 date: 2026-02-16
 draft: false
-charTitle: "Hazbin Hotel"
-genre: "Animation"
-year: 2024
+charTitle: "Game of Thrones"
+genre: "Action"
+year: 2011
 rating: "TV-MA"
 language: "English"
 type: "implicit"

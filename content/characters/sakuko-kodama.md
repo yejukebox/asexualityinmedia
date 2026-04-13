@@ -1,10 +1,10 @@
 ---
-title: "Hara Tsumugi"
+title: "Sakuko Kodama"
 date: 2026-02-16
 draft: false
-charTitle: "17.3 About a Sex"
-genre: "Drama"
-year: 2020
+charTitle: "Koisenu Futari"
+genre: "Comedy"
+year: 2022
 rating: "None"
 language: "Japanese"
 type: "explicit"

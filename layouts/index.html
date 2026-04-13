@@ -26,47 +26,55 @@
             <h2>Explore Characters</h2>
             <div class="filter-controls">
                 <div class="filter-group">
-                    <label for="genre-filter">Genre:</label>
+                    <label for="genre-filter">Genre</label>
                     <select id="genre-filter">
                         <option value="all">All Genres</option>
                     </select>
                 </div>
-
                 <div class="filter-group">
-                    <label for="language-filter">Language:</label>
+                    <label for="language-filter">Language</label>
                     <select id="language-filter">
                         <option value="all">All Languages</option>
                     </select>
                 </div>
-
                 <div class="filter-group">
-                    <label for="type-filter">Representation:</label>
+                    <label for="type-filter">Representation</label>
                     <select id="type-filter">
                         <option value="all">All Types</option>
                         <option value="explicit">Explicit</option>
                         <option value="implicit">Implicit</option>
                     </select>
                 </div>
-
                 <div class="filter-group">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" placeholder="Character or show name...">
+                    <label for="media-filter">Media</label>
+                    <select id="media-filter">
+                        <option value="all">TV &amp; Film</option>
+                        <option value="TV">TV Only</option>
+                        <option value="Film">Film Only</option>
+                    </select>
+                </div>
+                <div class="filter-group filter-search">
+                    <label for="search">Search</label>
+                    <input type="text" id="search" placeholder="Character or show…">
                 </div>
             </div>
         </section>
 
         <section class="visualization">
-            <div id="chart"></div>
-            <div class="legend">
-                <div class="legend-item">
-                    <span class="legend-color explicit"></span>
-                    <span>Explicit Representation</span>
+            <div class="chart-legend">
+                <div class="legend-group">
+                    <span class="legend-dot explicit-dot"></span><span>Explicit</span>
+                    <span class="legend-dot implicit-dot"></span><span>Implicit</span>
                 </div>
-                <div class="legend-item">
-                    <span class="legend-color implicit"></span>
-                    <span>Implicit Representation</span>
+                <div class="legend-group">
+                    <span class="legend-circle"></span><span>TV series</span>
+                    <span class="legend-diamond"></span><span>Film</span>
+                </div>
+                <div class="legend-group">
+                    <span class="legend-dot speculated-dot"></span><span>Speculated canon</span>
                 </div>
             </div>
+            <div id="chart"></div>
         </section>
 
         <section class="character-count">
@@ -76,7 +84,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Asexuality in Media. View source on <a href="https://github.com/yejukebox/asexualityinmedia" target="_blank">GitHub</a>.</p>
+            <p>&copy; 2026 Asexuality in Media &mdash; <a href="https://github.com/yejukebox/asexualityinmedia" target="_blank">View on GitHub</a></p>
         </div>
     </footer>
 
